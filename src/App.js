@@ -1,9 +1,15 @@
 // @flow
 import React, { Component } from "react";
 import logo from "./logo.svg";
+import io from "socket.io-client";
 import "./App.css";
 
 class App extends Component {
+  componentDidMount() {
+    const socket = io("http://localhost:3001");
+    socket.emit("poop", "msgggg");
+  }
+
   render() {
     return (
       <div className="App">
