@@ -18,7 +18,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "flow": "flow"
+    "flow": "flow",
+    "server:watch": "nodemon server/app.js",
+    "socket:watch": "nodemon streamServer/socket.js"
   },
   "proxy": "http://localhost:4000"
 }
